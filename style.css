@@ -1,0 +1,115 @@
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #333;
+}
+
+/* Header Section */
+#main {
+    text-align: center;
+    color: #fff;
+    margin-bottom: 20px;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#main h1 {
+    font-size: 2.5rem;
+    margin-bottom: 5px;
+}
+
+#main p {
+    font-size: 1rem;
+    opacity: 0.9;
+}
+
+/* Card / Form Container */
+#form {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    width: 100%;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+/* Input Field */
+#cityInput {
+    width: 100%;
+    padding: 12px 16px;
+    border: 2px solid #e1e1e1;
+    border-radius: 8px;
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+#cityInput:focus {
+    border-color: #4facfe;
+}
+
+/* Submit Button */
+#submit {
+    width: 100%;
+    padding: 12px;
+    background: #4facfe;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.1s ease;
+}
+
+#submit:hover {
+    background: #3b93e6;
+}
+
+#submit:active {
+    transform: scale(0.98);
+}
+
+/* Result Data Fields */
+#place {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #222;
+    margin-top: 10px;
+    text-align: center;
+}
+
+#Temperature {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #4facfe;
+    text-align: center;
+}
+
+#form p {
+    font-size: 1rem;
+    color: #555;
+    margin: 0;
+}
+
+/* Error Text Styling */
+#usrError {
+    color: #ff4d4d;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 5px;
+}
